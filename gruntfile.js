@@ -53,11 +53,11 @@ module.exports = function (grunt) {
           options: {
             patterns: [
               {
-                match: "ENDERECO_DO_CSS",
+                match: "ENDENRECO_DO_CSS",
                 replacement: "./styles/main.min.css",
               },
               {
-                match: "ENDERECO_DO_JS",
+                match: "ENDENRECO_DO_JS",
                 replacement: "./scripts/main.min.js",
               },
             ],
@@ -87,7 +87,7 @@ module.exports = function (grunt) {
       uglify: {
         target: {
           files: {
-            'dist/scripts/main.min.js': 'src/scripts/main.js',
+            "dist/scripts/main.min.js": "src/scripts/main.js",
           },
         },
       },
