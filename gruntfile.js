@@ -32,11 +32,11 @@ module.exports = function (grunt) {
           patterns: [
             {
               match: "ENDERECO_DO_CSS",
-              replacement: "./style/main.css",
+              replacement: "./styles/main.css", // Corrigindo o caminho do CSS
             },
             {
               match: "ENDERECO_DO_JS",
-              replacement: "../src/scripts/main.js",
+              replacement: "./scripts/main.js", // Corrigindo o caminho do JavaScript
             },
           ],
         },
@@ -101,10 +101,10 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks("grunt-contrib-clean");
   grunt.loadNpmTasks("grunt-contrib-uglify");
 
-  // Tarefa padrÃ£o
+  // Tarefa padrÃo
   grunt.registerTask("default", ["watch"]);
 
-  // Tarefa de construÃ§Ã£o
+  // Tarefa de construção
   grunt.registerTask("build", [
     "less:production",
     "htmlmin:dist",
